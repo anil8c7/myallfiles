@@ -1,0 +1,55 @@
+.sidebar {
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #005952;
+    color: white;
+    width: 5%;
+    position: fixed;
+
+    .top {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 14px;
+
+            &:hover {
+                background-color: #efda7f;
+                border-radius: 5px;
+                color: #005952;
+            }
+
+            .icon {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .bottom {
+        margin-top: 50px;
+        max-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

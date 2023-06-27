@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ship {
+    position: relative;
+
+    .shipContainer {
+        overflow-y: auto;
+        margin: 0 auto;
+        margin-left: 60px;
+        flex: 6;
+        padding: 0 0 15px 20px;
+
+        .searchArea {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+
+            .logistic {
+                display: flex;
+                justify-content: space-between;
+                width: 10%;
+
+                .logisticText {
+                    color: gray;
+                }
+
+                .greaterSign {
+                    color: gray;
+                    font-weight: 500;
+                }
+            }
+
+            .searchBar {
+                display: flex;
+                width: 20%;
+                align-items: center;
+                position: relative;
+                padding: 3px;
+
+                .searchIcon {
+                    position: absolute;
+                    left: 9px;
+                    color: rgb(150, 149, 149);
+                }
+
+                input {
+                    height: 40px;
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 0 28px;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            }
+        }
+
+        .paButton {
+            padding: 35px 20px 20px;
+        }
+        .details {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: rgb(228, 225, 221);
+                height: 1px;
+                bottom: 47px;
+                left: 29px;
+                width: 95%;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 29px;
+                bottom: -18px;
+                height: 1px;
+                width: 95%;
+                background-color: rgb(228, 225, 221);
+            }
+
+            .lists {
+                margin-top: 22px;
+                ul {
+                    padding: 0 28px;
+                    display: flex;
+                    justify-content: flex-start;
+                    list-style: none;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    gap: 1rem;
+                }
+                li {
+                    cursor: pointer;
+                    color: gray;
+
+                    &.active {
+                        position: relative;
+                        color: #005952;
+                        font-size: 17px;
+                        font-weight: 600;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -18px;
+                            width: 100%;
+                            border-bottom: 3px solid #005952;
+
+                        }
+                    }
+
+                    &:hover {
+                        color: #005952;
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+
+        }
+
+        .listContainer {
+            display: flex;
+            align-items: center;
+            width: 98%;
+            margin-left: 10px;
+            -webkit-box-shadow: 10px 6px 45px -2px rgba(186, 160, 186, 1);
+            -moz-box-shadow: 10px 6px 45px -2px rgb(214, 211, 214);
+            box-shadow: 10px 6px 45px -2px rgb(226, 224, 226);
+
+        }
+
+    }
+}

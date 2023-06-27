@@ -1,0 +1,98 @@
+@mixin hideScrollbar {
+  &::-webkit-scrollbar {
+    width: 0.1px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+@mixin otherdetails{
+  .otherdetails{
+    color: gray;
+    font-size: 12px;
+  }
+}
+
+@mixin tableHead {
+  .tableHead{
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+  }
+}
+
+.pendingtable {
+  width: 100%;
+  max-height: 500px;
+  position: relative;
+  overflow: 'auto';
+  @include hideScrollbar;
+  @include tableHead;
+  @include otherdetails;
+  tr:nth-child(even) {
+    background-color: #ededed8c;
+  }
+
+
+  .stickyPagination {
+    position: 'sticky';
+    bottom: 0;
+    background-color: '#f5f5f5';
+    z-index: 1;
+    display: 'flex';
+    justify-content: 'center';
+    padding: '8px';
+
+  }
+}
+
+.todayTable {
+  width: 100%;
+  max-height: 500px;
+  overflow: 'auto';
+  @include hideScrollbar;
+  @include tableHead;
+  @include otherdetails;
+  tr:nth-child(even) {
+    background-color: #ededed8c;
+  }
+
+}
+
+.delayedTable {
+  width: 100%;
+  max-height: 500px;
+  overflow: 'auto';
+  @include hideScrollbar;
+  @include tableHead;
+  @include otherdetails;
+  tr:nth-child(even) {
+    background-color: #ededed8c;
+  }
+
+}
+
+.completeTable {
+  width: 100%;
+  max-height: 500px;
+  overflow: 'auto';
+  @include hideScrollbar;
+  @include tableHead;
+  @include otherdetails;
+  tr:nth-child(even) {
+    background-color: #f3f0f0;
+  }
+
+}
+
+.buttonDesign {
+  background-color: #005952;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 5px;
+}

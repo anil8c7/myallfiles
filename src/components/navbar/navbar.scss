@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 15px;
+    max-height: 200px;
+    -webkit-box-shadow: 2px 1px 3px 2px rgba(230,221,230,1);
+-moz-box-shadow: 2px 1px 3px 2px rgba(230,221,230,1);
+box-shadow: 2px 1px 3px 2px rgba(230,221,230,1);
+.items{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    .item{
+        margin-right: 20px;
+        background-color: rgb(247, 245, 245,1);
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        .chat{
+            color: rgb(106, 105, 105);
+
+        }
+        .notification{
+            color: rgb(106, 105, 105);
+        }
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .help{
+            font-size: 14px;
+            color: rgb(106, 105, 105);
+            font-weight: bold;
+        }
+        .designation{
+            font-size: 11px;
+            margin-left: 10px;
+        }
+        .user{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .userIcon{
+                background-color: white;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+            .userdetails{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: gray;
+                font-size: 14px;
+                margin-left: 5px;
+                .designation{
+                    font-size: 10px;
+                    font-weight: bold;
+                    margin-right: 17px;
+                    color: gray;
+
+                }
+                .username{
+                    font-size:14px ;
+                    color: gray;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+}
